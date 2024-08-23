@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background: url(./bg-man-sitting.jpg)no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+header::after{
+    position: absolute;
+    content: "";
+    height: 200vh;
+    width: 100%;
+    top: -70%;
+    left: -50%;
+    background-color: #161d3fb0;
+    transform: rotate(25deg);
+}
+
+.contanier{
+    padding: 25px;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.contanier .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contanier .navbar .logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contanier .navbar ul li {
+    display: inline-block;
+    margin: 20px;
+  
+}
+.contanier .navbar ul li a{
+    text-decoration: none;
+    color: #bdbdbd;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.contanier .navbar ul li:hover a,
+.contanier .navbar ul li.activ a{
+    color: #fff;
+}
+
+.contanier .btn{
+    font-weight: 400;
+    text-decoration: none;
+    background-color: #3a79f9;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.contanier .btn:hover{
+    color: #3a79f9;
+    background-color: #fff;
+}
+
+.contanier .content{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contanier .content h1{
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    line-height: 1.2;
+
+}
+.contanier .content p{
+    color: #bdbdbd;
+    margin-bottom: 34px;
+    line-height: 2;
+}
+.contanier .content .btn{
+    font-size: 24px;
+
+}
